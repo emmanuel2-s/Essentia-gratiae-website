@@ -1,0 +1,80 @@
+import FadeUp from "../../utils/fadeUp";
+import missionImg from "../../assets/images/lucid-origin_A_peaceful_circle_of_women_gathered_for_a_mindfulness_and_self-care_workshop_jou-0.jpg";
+
+export default function Values() {
+  return (
+    <>
+      <section className="section">
+        <div className="container-custom ">
+          <div className="small-heading center">Our Values</div>
+
+          {/* <h2 className="main-title">Guidance for your journey within.</h2> */}
+
+          <div className="journal-grid">
+            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+              <h4>Still</h4>
+              <p>
+                Creating moments to slow down, breathe deeply, and reconnect
+                with yourself.
+              </p>
+            </div>
+
+            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+              <h4>Healing</h4>
+              <p>
+                Supporting personal growth through intentional rituals and
+                mindful practices.
+              </p>
+            </div>
+
+            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+              <h4>Grace</h4>
+              <p>
+                Encouraging a softer, kinder relationship with yourself and your
+                journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COMMUNITY SECTION START */}
+      <section className="section">
+        <div className="container-custom">
+          <div className="story-grid">
+            <FadeUp>
+              <div className="story-img ">
+                <img src={missionImg} />
+              </div>
+            </FadeUp>
+
+            <div className="story-text">
+              <div className="small-heading">Our Community</div>
+              <FadeUp>
+                <h2 className="">Healing is not meant to be walked alone.</h2>
+              </FadeUp>
+              <FadeUp>
+                <div className="line"></div>
+
+                <p>
+                  In a world that celebrates constant productivity, many people
+                  silently carry stress, anxiety, and emotional burdens. At
+                  Essentia Gratia, we are committed to creating a supportive
+                  community where individuals feel seen, understood, and
+                  encouraged. Whether you are seeking calm after a demanding day
+                  or beginning a new chapter of healing, you are welcome here.
+                </p>
+
+                {/* <a href="#" className="btn-sage">
+                        {" "}
+                        Discover The Philosophy{" "}
+                      </a> */}
+              </FadeUp>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* COMMUNITY SECTION END */}
+    </>
+  );
+}

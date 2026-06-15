@@ -1,0 +1,51 @@
+@import "tailwindcss";
+:root {
+  --sage: #7d8770;
+  --cream: #f7f2eb;
+  --gold: #c5ae86;
+  --taupe: #9c8d7c;
+  --text: #342d28;
+  --amber: #8b5e3c;
+  --dark: #2c2a28;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* background: var(--cream); */
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.hero-image {
+  animation: zoomEffect 8s ease-in-out infinite;
+}
+
+@keyframes zoomEffect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
