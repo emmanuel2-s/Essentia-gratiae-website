@@ -49,7 +49,7 @@ export default function Values() {
             </FadeUp>
 
             <div className="story-text">
-              <div className="small-heading">Our Community</div>
+              <div className="small-heading">A Community of Healing</div>
               <FadeUp>
                 <h2 className="">Healing is not meant to be walked alone.</h2>
               </FadeUp>
@@ -62,7 +62,8 @@ export default function Values() {
                   Essentia Gratia, we are committed to creating a supportive
                   community where individuals feel seen, understood, and
                   encouraged. Whether you are seeking calm after a demanding day
-                  or beginning a new chapter of healing, you are welcome here.
+                  or beginning a new chapter of healing, our mission is to
+                  create tools that support and uplift you.
                 </p>
 
                 {/* <a href="#" className="btn-sage">

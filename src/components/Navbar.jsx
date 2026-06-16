@@ -14,13 +14,13 @@ export default function Navbar() {
         <div class="nav-links">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <Link to="/">Services</Link>
+          <Link to="/service">Services</Link>
           <Link to="/">Rituals</Link>
         </div>
 
         <div class="nav-links">
-          <Link to="/">Let's Talk</Link>
-          <Link to="/" className="text-xl">
+          <Link to="/contactus">Let's Talk</Link>
+          <Link to="/cart" className="text-xl">
             👜
           </Link>
         </div>

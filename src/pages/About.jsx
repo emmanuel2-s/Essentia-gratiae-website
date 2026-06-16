@@ -7,6 +7,7 @@ import FadeUp from "../utils/fadeUp";
 import Mission from "../components/aboutSections/Mission";
 import Values from "../components/aboutSections/Values";
 import Experience from "../components/aboutSections/Experience";
+import BeyondProduct from "../components/aboutSections/BeyondProduct";
 function About() {
   return (
     <>
@@ -104,6 +105,7 @@ function About() {
       <Mission />
       <Values />
       <Experience />
+      <BeyondProduct />
 
       <section className="cta">
         <img src={ctaImg} />
