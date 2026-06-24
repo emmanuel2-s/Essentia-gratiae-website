@@ -3,7 +3,7 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import RouterPage from "./utils/RouterPage";
-import "./App.css";
+// import "./App.css";
 function App() {
   return (
     <>

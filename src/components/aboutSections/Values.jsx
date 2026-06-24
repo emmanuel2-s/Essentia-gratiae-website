@@ -11,7 +11,7 @@ export default function Values() {
           {/* <h2 className="main-title">Guidance for your journey within.</h2> */}
 
           <div className="journal-grid">
-            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
               <h4>Still</h4>
               <p>
                 Creating moments to slow down, breathe deeply, and reconnect
@@ -19,7 +19,7 @@ export default function Values() {
               </p>
             </div>
 
-            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
               <h4>Healing</h4>
               <p>
                 Supporting personal growth through intentional rituals and
@@ -27,7 +27,7 @@ export default function Values() {
               </p>
             </div>
 
-            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
               <h4>Grace</h4>
               <p>
                 Encouraging a softer, kinder relationship with yourself and your
@@ -51,7 +51,9 @@ export default function Values() {
             <div className="story-text">
               <div className="small-heading">A Community of Healing</div>
               <FadeUp>
-                <h2 className="">Healing is not meant to be walked alone.</h2>
+                <h2 className="text-4xl md:text-6xl">
+                  Healing is not meant to be walked alone.
+                </h2>
               </FadeUp>
               <FadeUp>
                 <div className="line"></div>

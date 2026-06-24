@@ -26,7 +26,7 @@
 
 .logo {
   display: block;
-  width: 200px;
+  width: 400px;
 }
 
 .nav-links {
@@ -42,7 +42,7 @@
   color: white;
 }
 
-.hero {
+/* .hero {
   height: 100vh;
   position: relative;
   display: flex;
@@ -82,7 +82,7 @@
   letter-spacing: 3px;
   font-size: 14px;
   line-height: 2;
-}
+} */
 
 .btn-custom {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -382,15 +382,18 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* .logo {
+    width: 100px;
+  } */
   .nav-links {
     display: none;
   }
 
   .navbar-custom {
-    padding: 20px;
+    padding: 0px;
   }
 
-  .section {
+  /* .section {
     padding: 80px 0;
-  }
+  } */
 }

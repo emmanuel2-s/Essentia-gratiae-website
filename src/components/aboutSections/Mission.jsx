@@ -1,6 +1,5 @@
 import FadeUp from "../../utils/fadeUp";
 import missionImg from "../../assets/images/create-imgs/create-3.jfif";
-// import "../../App.css";
 
 export default function Mission() {
   return (
@@ -11,10 +10,10 @@ export default function Mission() {
 
           <h2 className="main-title center">More than a brand. A sanctuary.</h2>
           <div className="story-grid">
-            <div className="story-text bg-white p-4 shadow">
+            <div className="story-text bg-white p-20 rounded shadow">
               <div className="small-heading">Our Mission</div>
               <FadeUp>
-                <h2 className="">More than a brand. A sanctuary.</h2>
+                <h2 className="text-5xl">More than a brand. A sanctuary.</h2>
               </FadeUp>
               <FadeUp>
                 <div className="line"></div>

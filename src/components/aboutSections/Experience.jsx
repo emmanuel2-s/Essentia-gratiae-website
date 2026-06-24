@@ -11,7 +11,7 @@ function Experience() {
         <div className="container-custom ">
           <FadeUp>
             <div className="small-heading center">Our Experience</div>
-            <div className="line mx-auto"></div>
+            {/* <div className="line"></div> */}
 
             <p className="center">
               We believe self-care extends beyond what you purchase. Through
@@ -61,9 +61,9 @@ function Experience() {
             </FlyIn>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-10">
           <FadeUp>
-            <div className="bg-white rounded shadow my-4 center w-75 mx-auto">
+            <div className="max-w-7xl py-8 border-b-4 border-[#7d8770] bg-white rounded shadow my-4 center w-full mx-auto">
               <p className="p-4 ">
                 ‘‘ You deserve moments of peace. You deserve healing. And most
                 importantly, you deserve to prioritise yourself without guilt.ˮ

@@ -1,4 +1,4 @@
-import logo from "../assets/logo/logo3.png";
+import logo from "../assets/logo/aster-logo-removebg-preview.png";
 import "../App.css";
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
             <img
               src={logo}
               alt="Aster Essentia Gratiae"
-              className="w-52 object-cover"
+              className="w-32 object-cover"
             />
             <p>Rituals for stillness, grounding, and graceful return.</p>
           </div>

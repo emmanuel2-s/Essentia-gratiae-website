@@ -12,7 +12,7 @@ import img3 from "../assets/images/image-2.jfif";
 import FadeUp from "../utils/fadeUp";
 import FlyIn from "../utils/flyIn";
 import InstaSection from "../components/InstaSection";
-import "../App.css";
+// import "../App.css";
 
 export default function Home() {
   return (
