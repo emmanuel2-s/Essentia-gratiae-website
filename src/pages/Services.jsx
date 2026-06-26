@@ -4,6 +4,7 @@ import NewsletterSection from "../components/contactSection/NewsLetter";
 import Category from "../components/serviceSection/Category";
 import FeaturedProducts from "../components/serviceSection/FeaturedProducts";
 import Testimoinal from "../components/serviceSection/Testimoinal";
+import WhyChooseUs from "../assets/images/products/lucid-origin_Large_hero_image_of_the_candle_on_white_linen_with_eucalyptus_and_soft_morning_l-0.jpg";
 import FadeUp from "../utils/fadeUp";
 import FlyIn from "../utils/flyIn";
 
@@ -14,6 +15,7 @@ function Services() {
       <section className="relative h-[80vh] overflow-hidden bg-cover bg-center">
         <img
           src={heroImage}
+          loading="lazy"
           alt="Contact Essentia Gratiae"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -49,10 +51,7 @@ function Services() {
       {/* WHY CHOOSE US */}
       <section className="py-4 px-5">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <img
-            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0ff?w=800"
-            className="rounded-3xl"
-          />
+          <img src={WhyChooseUs} className="rounded-xl" loading="lazy" />
 
           <div>
             <h2 className="text-5xl font-bold mt-4">Why Choose Our Candles?</h2>
@@ -189,6 +188,20 @@ function Services() {
       <Testimoinal />
       <FAQ />
       <NewsletterSection />
+
+      <div id="whatsapp-container">
+        <a
+          href="https://wa.me/+447939437939"
+          target="_blank"
+          id="whatsapp-float"
+        >
+          <span class="chat-text">Need help? Chat with us!</span>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+            alt="Chat on WhatsApp"
+          />
+        </a>
+      </div>
     </>
   );
 }

@@ -24,8 +24,8 @@ function Experience() {
 
           <div className="journal-grid">
             <FlyIn direction="left">
-              <div className="journal-card hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
-                <img src={img1} className="rounded" />
+              <div className="journal-card rounded-3xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+                <img src={img1} className="rounded-3xl" />
 
                 {/* <h4>Still</h4>
               <p>
@@ -35,8 +35,8 @@ function Experience() {
               </div>
             </FlyIn>
             <FlyIn direction="right">
-              <div className="journal-card hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
-                <img src={img2} alt="" className="rounded" />
+              <div className="journal-card rounded-3xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+                <img src={img2} alt="" className="rounded-3xl" />
                 {/* <h4>Healing</h4>
               <p>
                 Supporting personal growth through intentional rituals and
@@ -45,11 +45,11 @@ function Experience() {
               </div>
             </FlyIn>
             <FlyIn direction="right">
-              <div className="journal-card hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
+              <div className="journal-card rounded-3xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow">
                 <img
                   src={img3}
                   alt="Luxury_amber_candle_on_soft_cream_linen_fabric_with_label_name_Aster_warm_mornin-0.jpg"
-                  className="rounded"
+                  className="rounded-3xl"
                 />
 
                 {/* <h4>Grace</h4>

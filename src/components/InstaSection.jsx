@@ -29,24 +29,24 @@ export default function InstaSection() {
         </div>
         <FlyIn direction="left">
           <div className="insta-grid">
-            <img src={img1} />
-            <img src={img2} />
-            <img src={img3} />
-            <img src={img4} />
-            <img src={img5} />
-            <img src={img6} />
+            <img src={img1} loading="lazy" />
+            <img src={img2} loading="lazy" />
+            <img src={img3} loading="lazy" />
+            <img src={img4} loading="lazy" />
+            <img src={img5} loading="lazy" />
+            <img src={img6} loading="lazy" />
           </div>
         </FlyIn>
       </section>
 
       <section className="cta">
-        <img src={ctaImg} />
+        <img src={ctaImg} loading="lazy" />
         <div className="cta-overlay"></div>
 
         <FadeUp>
           <div className="cta-content">
             <h2>Return to yourself.</h2>
-            <p>Your rituals begin here.</p>
+            <p className="pb-10 text-xl italic">Your rituals begin here.</p>
 
             <a href="#" className="btn-custom text-decoration-none">
               Begin Your Ritual

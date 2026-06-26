@@ -20,6 +20,7 @@ export default function NewsletterSection() {
       {/* Background Image */}
       <img
         src={newsletterImage}
+        loading="lazy"
         alt="Newsletter"
         className="absolute inset-0 w-full h-full object-cover"
       />

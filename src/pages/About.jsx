@@ -63,7 +63,7 @@ function About() {
           <div className="story-grid">
             <FadeUp>
               <div className="story-img ">
-                <img src={storyImg} />
+                <img src={storyImg} loading="lazy" className="rounded-xl" />
               </div>
             </FadeUp>
 
@@ -108,13 +108,13 @@ function About() {
       <BeyondProduct />
 
       <section className="cta">
-        <img src={ctaImg} />
+        <img src={ctaImg} loading="lazy" />
         <div className="cta-overlay"></div>
 
         <FadeUp>
           <div className="cta-content">
             <h2>Return to yourself.</h2>
-            <p>Your rituals begin here.</p>
+            <p className="pb-10 text-xl italic">Your rituals begin here.</p>
 
             <a href="#" className="btn-custom text-decoration-none">
               Begin Your Ritual
@@ -122,6 +122,20 @@ function About() {
           </div>
         </FadeUp>
       </section>
+
+      <div id="whatsapp-container">
+        <a
+          href="https://wa.me/+447939437939"
+          target="_blank"
+          id="whatsapp-float"
+        >
+          <span class="chat-text">Need help? Chat with us!</span>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+            alt="Chat on WhatsApp"
+          />
+        </a>
+      </div>
     </>
   );
 }

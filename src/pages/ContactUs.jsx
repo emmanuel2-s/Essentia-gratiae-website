@@ -2,10 +2,14 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 // import emailjs from "@emailjs/browser";
 import heroImage from "../assets/images/contact/lucid-origin_Luxury_wellness_studio_interior_with_warm_natural_sunlight_elegant_woman_writing-0.jpg";
+import newsletterImage from "../assets/images/contact/lucid-origin_Luxury_wellness_flat_lay_with_elegant_candles_dried_flowers_ceramic_tea_cup_open-0.jpg";
+
 import FAQ from "../components/contactSection/Faqs";
 import NewsletterSection from "../components/contactSection/NewsLetter";
 import FlyIn from "../utils/flyIn";
-
+import { MdMarkEmailUnread } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
 export default function ContactUs() {
   const form = useRef();
 
@@ -139,30 +143,74 @@ export default function ContactUs() {
         {/* </div> */}
       </section>
 
-      <section className=" py-4">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <section className=" py-10 relative overflow-hidden">
+        {/* Background Image */}
+        <img
+          src={newsletterImage}
+          loading="lazy"
+          alt="Newsletter"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div className=" relative z-10 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
           <FlyIn direction="left">
-            <div className="bg-white p-2 text-center shadow-sm rounded hover:-translate-y-2 hover:ease-in-out duration-300">
-              <h3 className="text-2xl">Email</h3>
-              <p className="mt-4 text-gray-600">hello@essentiagratia.com</p>
+            <div className="bg-white p-2 text-center shadow-sm rounded hover:-translate-y-2 hover:ease-in-out duration-300 border-b-4 border-[#7d8770]">
+              <div className="flex items-center gap-2 justify-center">
+                <MdMarkEmailUnread size={25} />
+                <h3 className="text-2xl ">Email</h3>
+              </div>
+              <p className="mt-4 text-gray-600 capitalize">
+                General Inquiries & Support
+              </p>
+
+              <p className="mt-4 text-gray-600">info@essentiagratiae.com</p>
             </div>
           </FlyIn>
           <FlyIn direction="left">
-            <div className="bg-white p-2 text-center shadow-sm rounded hover:-translate-y-2 hover:ease-in-out duration-300">
-              <h3 className="text-2xl">Instagram</h3>
+            <div className="bg-white p-2 text-center shadow-sm rounded hover:-translate-y-2 hover:ease-in-out duration-300 border-b-4 border-[#7d8770]">
+              <div className="flex items-center justify-center gap-2">
+                <FaInstagram size={25} />
+                <h3 className="text-2xl ">Instagram</h3>
+              </div>
+              <p className="mt-4 text-gray-600 capitalize">
+                for daily inspiration, ritual tips
+              </p>
               <p className="mt-4 text-gray-600">@essentiagratia</p>
             </div>
           </FlyIn>
           <FlyIn direction="right">
-            <div className="bg-white p-2 text-center shadow-sm rounded hover:-translate-y-2 hover:ease-in-out duration-300">
-              <h3 className="text-2xl">Workshops</h3>
-              <p className="mt-4 text-gray-600">Available by booking</p>
+            <div className="bg-white p-2 text-center shadow-sm rounded hover:-translate-y-2 hover:ease-in-out duration-300 border-b-4 border-[#7d8770]">
+              <div className="flex items-center gap-2 justify-center">
+                <FaWhatsapp size={25} />
+                <h3 className="text-2xl ">WhatsApp</h3>
+              </div>
+              <p className="mt-4 text-gray-600 capitalize">
+                General Inquiries & Support
+              </p>
+              <p className="mt-4 text-gray-600">+44 7939 437939</p>
             </div>
           </FlyIn>
         </div>
       </section>
       <FAQ />
       <NewsletterSection />
+
+      <div id="whatsapp-container">
+        <a
+          href="https://wa.me/+447939437939"
+          target="_blank"
+          id="whatsapp-float"
+        >
+          <span class="chat-text">Need help? Chat with us!</span>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+            alt="Chat on WhatsApp"
+          />
+        </a>
+      </div>
     </>
   );
 }

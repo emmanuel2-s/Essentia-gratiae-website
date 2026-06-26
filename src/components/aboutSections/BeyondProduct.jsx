@@ -10,7 +10,7 @@ function BeyondProduct() {
           <div className="story-grid">
             <FadeUp>
               <div className="story-img ">
-                <img src={beyondImg} />
+                <img src={beyondImg} className="rounded-xl" />
               </div>
             </FadeUp>
 

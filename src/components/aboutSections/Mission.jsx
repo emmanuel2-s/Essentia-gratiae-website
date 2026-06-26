@@ -35,7 +35,7 @@ export default function Mission() {
 
             <FadeUp>
               <div className="story-img ">
-                <img src={missionImg} />
+                <img src={missionImg} loading="lazy" className="rounded-xl" />
               </div>
             </FadeUp>
           </div>

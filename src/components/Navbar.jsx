@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo/aster-logo-removebg-preview.png";
 
-export default function Navbar() {
+export default function Navbar({ scrolled }) {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -17,7 +17,11 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-md">
+      <nav
+        className={`fixed left-0 w-full z-50 bg-black/30 backdrop-blur-md  transition-all duration-500 ${
+          scrolled ? "top-0" : "top-12"
+        }`}
+      >
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 lg:px-10 h-24">
           {/* Logo */}
           <Link to="/">
@@ -48,10 +52,10 @@ export default function Navbar() {
             </Link>
 
             <Link
-              to="/rituals"
+              to="/products"
               className="text-white uppercase tracking-widest hover:text-gray-300 transition"
             >
-              Rituals
+              Products
             </Link>
           </div>
 

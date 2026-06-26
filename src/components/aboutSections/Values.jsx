@@ -1,6 +1,6 @@
 import FadeUp from "../../utils/fadeUp";
 import missionImg from "../../assets/images/lucid-origin_A_peaceful_circle_of_women_gathered_for_a_mindfulness_and_self-care_workshop_jou-0.jpg";
-
+import { Bird, Flower2, Feather } from "lucide-react";
 export default function Values() {
   return (
     <>
@@ -12,15 +12,21 @@ export default function Values() {
 
           <div className="journal-grid">
             <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
-              <h4>Still</h4>
+              <div className="flex gap-5 items-center px-5">
+                <Bird size={60} strokeWidth={1.2} />
+                <h4>Still</h4>
+              </div>
               <p>
                 Creating moments to slow down, breathe deeply, and reconnect
                 with yourself.
               </p>
             </div>
 
-            <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
-              <h4>Healing</h4>
+            <div className="journal-card bg-white p-4 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
+              <div className="flex gap-5 items-center px-5">
+                <Flower2 size={60} strokeWidth={1.2} />
+                <h4>Healing</h4>
+              </div>
               <p>
                 Supporting personal growth through intentional rituals and
                 mindful practices.
@@ -28,7 +34,11 @@ export default function Values() {
             </div>
 
             <div className="journal-card bg-white p-2 rounded-2xl hover:-translate-y-2 hover:ease-in-out duration-300 shadow border-b-4 border-[#7d8770]">
-              <h4>Grace</h4>
+              <div className="flex gap-5 items-center px-5">
+                <Feather size={60} strokeWidth={1.2} />
+                <h4>Grace</h4>
+              </div>
+
               <p>
                 Encouraging a softer, kinder relationship with yourself and your
                 journey.
@@ -44,7 +54,7 @@ export default function Values() {
           <div className="story-grid">
             <FadeUp>
               <div className="story-img ">
-                <img src={missionImg} />
+                <img src={missionImg} loading="lazy" className="rounded-xl" />
               </div>
             </FadeUp>
 

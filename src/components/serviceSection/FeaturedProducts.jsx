@@ -36,7 +36,7 @@ function FeaturedProducts() {
               >
                 <img
                   src={item.image}
-                  loading="loading"
+                  loading="lazy"
                   className="h-80 w-full object-cover"
                 />
 
