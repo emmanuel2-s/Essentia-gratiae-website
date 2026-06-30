@@ -1,113 +1,91 @@
-.topbar-area {
-  background: #fafafa;
-}
-.topbar-left p {
-  color: #666;
-  padding: 10px 0px;
-  margin-bottom: 0px;
-}
-.topbar-left li a i {
-  padding-right: 5px;
-  color: #44add5;
-  font-size: 16px;
-  font-weight: 700;
-}
-.topbar-right {
-  position: relative;
-  display: block;
-}
-.topbar-right ul li {
-  float: right;
-}
-.topbar-right ul li a:hover {
-  color: #fff;
-  border: 1px solid #44add5;
-  background: #44add5;
-}
-.topbar-right ul li a {
-  color: #666;
-  display: block;
-  font-size: 14px;
-  margin: 8px 3px;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #666;
-  text-align: center;
-  line-height: 25px;
-  border-radius: 2px;
-}
-.topbar-right ul li:first-child a {
-  padding-right: 0;
+.stars-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -10;
+  pointer-events: none;
+
+  /* Luxury Background */
+  background:
+    radial-gradient(circle at top, rgba(197, 174, 134, 0.12), transparent 40%),
+    radial-gradient(
+      circle at bottom right,
+      rgba(125, 135, 112, 0.18),
+      transparent 45%
+    ),
+    linear-gradient(180deg, #201710 0%, #2f2118 35%, #453124 70%, #2d2119 100%);
 }
 
-/*----------------------------------------*/
-/*  2.1 Header Middle  Area 
-/*----------------------------------------*/
-.logo {
-  display: block;
+/* Base particle */
+.star {
+  position: absolute;
+  top: -10vh;
+  border-radius: 999px;
+  animation-name: luxuryFloat;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
-.logo a {
-  display: inline-block;
-  height: auto;
-  padding: 30px 0;
+
+/* Far particles */
+.star.far {
+  width: 1px;
+  height: 1px;
+
+  background: rgba(255, 245, 220, 0.5);
+
+  box-shadow: 0 0 4px rgba(255, 230, 170, 0.25);
+
+  opacity: 0.35;
 }
-.header-area .quote-button {
-  padding: 8px 0px;
+
+/* Mid particles */
+.star.mid {
+  width: 2px;
+  height: 2px;
+
+  background: #f3deb4;
+
+  box-shadow: 0 0 8px rgba(255, 215, 140, 0.55);
+
+  opacity: 0.7;
 }
-.header-right-link {
-  float: right;
+
+/* Near particles */
+.star.near {
+  width: 4px;
+  height: 4px;
+
+  background: #ffd98d;
+
+  box-shadow:
+    0 0 12px #ffd27a,
+    0 0 22px rgba(255, 210, 122, 0.8);
+
+  opacity: 1;
 }
-.header-right-link form {
-  float: right;
+
+@keyframes luxuryFloat {
+  from {
+    transform: translateY(-10vh) translateX(0px);
+
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(35vh) translateX(18px);
+  }
+
+  65% {
+    transform: translateY(70vh) translateX(-18px);
+  }
+
+  100% {
+    transform: translateY(110vh) translateX(12px);
+
+    opacity: 0;
+  }
 }
-.header-middle-area .header-info {
-  width: 33.33%;
-  float: left;
-  padding: 36px 0px;
-}
-.header-middle-area .header-info-text span {
-  display: block;
-  font-size: 14px;
-}
-.header-middle-area .info-simple {
-  font-weight: 700;
-  color: #777;
-  font-size: 12px;
-}
-.header-middle-area .header-icon {
-  float: left;
-  margin-right: 10px;
-}
-.quote-button {
-  float: right;
-  margin-left: 15px;
-}
-.header-icon i {
-  color: #44add5;
-  font-size: 34px;
-  line-height: 40px;
-}
-.header-middle-area .logo a {
-  padding: 28px 0;
-}
-.info-first {
-  font-weight: 700;
-}
-.quote-btn {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  color: #fff;
-  background: #44add5;
-  display: inline-block;
-  border: 1px solid #44add5;
-  padding: 10px 20px;
-}
-.quote-btn:hover {
-  color: #44add5;
-  background: #fff;
-  border: 1px solid #44add5;
-}
-/*----------------------------------------*/
-/*  2.2 Header bottom  Area 
-/*----------------------------------------*/

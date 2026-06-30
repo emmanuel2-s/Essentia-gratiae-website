@@ -44,10 +44,8 @@ function Services() {
           </div>
         </div>
       </section>
-
       <Category />
       <FeaturedProducts />
-
       {/* WHY CHOOSE US */}
       <section className="py-4 px-5">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -81,9 +79,7 @@ function Services() {
           </div>
         </div>
       </section>
-
       {/* HOW IT WORKS */}
-
       <section className="py-4 mb-3 bg-black text-white">
         <div className="max-w-7xl mx-auto px-5">
           <FlyIn direction="left">
@@ -124,71 +120,10 @@ function Services() {
           </div>
         </div>
       </section>
-
-      {/* PRICING SECTION */}
-
-      <section className="py-5">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-5">Collections</h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <FlyIn direction="left">
-              <div className="rounded-3xl border p-4 hover:-translate-y-2 hover:ease-in-out duration-300">
-                <h3 className="text-3xl font-bold">Classic</h3>
-                <p className="text-5xl mt-5">$29</p>
-
-                <ul className="space-y-3 mt-5">
-                  <li>✔ Handmade</li>
-                  <li>✔ Soy Wax</li>
-                  <li>✔ Cotton Wick</li>
-                </ul>
-
-                <button className="mt-5 w-full bg-black text-white rounded-full py-3">
-                  Buy Now
-                </button>
-              </div>
-            </FlyIn>
-            <FlyIn direction="right">
-              <div className="rounded-3xl bg-black text-white p-5 scale-105 hover:-translate-y-2 hover:ease-in-out duration-300">
-                <h3 className="text-3xl font-bold">Premium</h3>
-                <p className="text-5xl mt-5">$45</p>
-
-                <ul className="space-y-3 mt-4">
-                  <li>✔ Luxury Jar</li>
-                  <li>✔ Essential Oils</li>
-                  <li>✔ Gift Box</li>
-                </ul>
-
-                <button className="mt-5 w-full bg-amber-500 rounded-full py-3">
-                  Buy Now
-                </button>
-              </div>
-            </FlyIn>
-            <FlyIn direction="right">
-              <div className="rounded-3xl border p-4 hover:-translate-y-2 hover:ease-in-out duration-300">
-                <h3 className="text-3xl font-bold">Luxury</h3>
-                <p className="text-5xl mt-5">$69</p>
-
-                <ul className="space-y-3 mt-5">
-                  <li>✔ Premium Glass</li>
-                  <li>✔ Signature Fragrance</li>
-                  <li>✔ VIP Packaging</li>
-                </ul>
-
-                <button className="mt-5 w-full bg-black text-white rounded-full py-3">
-                  Buy Now
-                </button>
-              </div>
-            </FlyIn>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIAL */}
+      .c {/* TESTIMONIAL */}
       <Testimoinal />
       <FAQ />
       <NewsletterSection />
-
       <div id="whatsapp-container">
         <a
           href="https://wa.me/+447939437939"
