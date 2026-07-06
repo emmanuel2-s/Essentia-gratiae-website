@@ -3,14 +3,17 @@ import FAQ from "../components/contactSection/Faqs";
 import NewsletterSection from "../components/contactSection/NewsLetter";
 import Category from "../components/serviceSection/Category";
 import FeaturedProducts from "../components/serviceSection/FeaturedProducts";
-import Testimoinal from "../components/serviceSection/Testimoinal";
+import Testimoinal from "../components/Testimonial";
 import WhyChooseUs from "../assets/images/products/lucid-origin_Large_hero_image_of_the_candle_on_white_linen_with_eucalyptus_and_soft_morning_l-0.jpg";
 import FadeUp from "../utils/fadeUp";
 import FlyIn from "../utils/flyIn";
+import CraftedSection from "../components/serviceSection/CraftedSection";
+// import Loader from "../components/Loader";
 
 function Services() {
   return (
     <>
+      {/* <Loader /> */}
       {/* HERO SECTION */}
       <section className="relative h-[80vh] overflow-hidden bg-cover bg-center">
         <img
@@ -44,6 +47,7 @@ function Services() {
           </div>
         </div>
       </section>
+      <CraftedSection />
       <Category />
       <FeaturedProducts />
       {/* WHY CHOOSE US */}
@@ -120,7 +124,7 @@ function Services() {
           </div>
         </div>
       </section>
-      .c {/* TESTIMONIAL */}
+      {/* TESTIMONIAL */}
       <Testimoinal />
       <FAQ />
       <NewsletterSection />

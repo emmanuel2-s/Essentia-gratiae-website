@@ -9,7 +9,7 @@ import {
 export default function TopbarArea({ scrolled }) {
   return (
     <div
-      className={`fixed top-0 left-0 z-[99999] hidden w-full border-b border-white/10 bg-[#7d8770]/90 text-[#f7f2eb] backdrop-blur-md lg:block transition-all duration-500  ${
+      className={`fixed top-0 left-0 z-[99999] hidden w-full border-b border-white/10 bg-[#1E3A34]/90 text-[#f7f2eb] backdrop-blur-md lg:block transition-all duration-500  ${
         scrolled ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
       }`}
     >

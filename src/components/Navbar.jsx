@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo/aster-logo-removebg-preview.png";
+import useCart from "../components/hooks/useCart";
 
 export default function Navbar({ scrolled }) {
   const [nav, setNav] = useState(false);
@@ -13,6 +14,10 @@ export default function Navbar({ scrolled }) {
   const hideMobileNav = () => {
     setNav(false);
   };
+
+  const { cart } = useCart();
+
+  const count = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <>
@@ -70,9 +75,12 @@ export default function Navbar({ scrolled }) {
 
             <Link
               to="/cart"
-              className="text-2xl text-white hover:scale-110 transition"
+              className="relative text-2xl text-white hover:scale-110 transition"
             >
               👜
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#7d8770] text-xs text-white">
+                {count}
+              </span>
             </Link>
           </div>
 
@@ -119,8 +127,15 @@ export default function Navbar({ scrolled }) {
             Let's Talk
           </Link>
 
-          <Link to="/cart" onClick={hideMobileNav} className="text-2xl">
+          <Link
+            to="/cart"
+            onClick={hideMobileNav}
+            className=" relative text-2xl"
+          >
             👜 Cart
+            <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#7d8770] text-xs text-white">
+              {count}
+            </span>
           </Link>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .stars-container {
-  position: fixed;
+  position: absolute;
   inset: 0;
   overflow: hidden;
   z-index: -10;

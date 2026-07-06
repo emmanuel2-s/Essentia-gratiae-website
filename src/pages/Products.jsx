@@ -1,10 +1,12 @@
 import ProductCard from "../components/products/ProductCard";
 import StillnessImage from "../assets/images/products/lucid-origin_Large_hero_image_of_the_candle_on_white_linen_with_eucalyptus_and_soft_morning_l-0.jpg";
 import { candles } from "../utils/Products";
+// import Loader from "../components/Loader";
 
 function Products() {
   return (
     <>
+      {/* <Loader /> */}
       <section className="bg-[#F8F5EE] min-h-screen">
         {/* HERO */}
         <div className="grid lg:grid-cols-2 min-h-screen">

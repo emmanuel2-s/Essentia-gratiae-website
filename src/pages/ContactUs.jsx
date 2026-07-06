@@ -10,6 +10,7 @@ import FlyIn from "../utils/flyIn";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
+// import Loader from "../components/Loader";
 export default function ContactUs() {
   const form = useRef();
 
@@ -29,6 +30,7 @@ export default function ContactUs() {
 
   return (
     <>
+      {/* <Loader /> */}
       <section className="relative h-[80vh] overflow-hidden">
         <img
           src={heroImage}

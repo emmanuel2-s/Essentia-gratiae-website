@@ -16,7 +16,7 @@ export default function InstaSection() {
         <div className="container-custom-insta">
           <div className="insta-link">
             <div className="moments">
-              <h5>MOMENTS OF GRACE</h5>
+              <h5 className="small-heading">MOMENTS OF GRACE</h5>
               <h3>
                 Follow along <em>@aster.rituals</em>
               </h3>

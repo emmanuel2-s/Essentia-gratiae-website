@@ -106,15 +106,15 @@
 .section-1,
 .section-2,
 .section-3 {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
-/* .section-1,
+.section-1,
 .section-3,
 .insta-grid,
 .container-custom-insta {
   background-color: var(--cream);
-} */
+}
 
 .story-grid {
   display: grid;
@@ -202,6 +202,8 @@
 
 .card-img img {
   transition: 1.3s ease;
+  width: 200px;
+  height: 200px;
 }
 
 .card:hover img {
@@ -209,7 +211,7 @@
 }
 
 .card {
-  background: transparent;
+  /* background: transparent; */
   border: none;
   text-align: center;
 }
@@ -254,6 +256,11 @@
 .journal-card h4 {
   font-size: 34px;
   margin-top: 20px;
+}
+
+.journal-card img {
+  width: 200px;
+  height: 200px;
 }
 
 .journal-card p {
@@ -333,7 +340,7 @@
 }
 
 .footer {
-  background: #000000;
+  background: #1e3a34;
   padding: 70px 0;
   color: #6f6358;
 }
@@ -425,6 +432,53 @@
   /* Apply a slight shadow to the text background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+
+/* loader css */
+
+
+.lds-facebook,
+.lds-facebook div {
+  box-sizing: border-box;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: currentColor;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0s;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+
 
 @media (max-width: 992px) {
   .hero h1 {

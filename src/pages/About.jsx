@@ -8,9 +8,11 @@ import Mission from "../components/aboutSections/Mission";
 import Values from "../components/aboutSections/Values";
 import Experience from "../components/aboutSections/Experience";
 import BeyondProduct from "../components/aboutSections/BeyondProduct";
+// import Loader from "../components/Loader";
 function About() {
   return (
     <>
+      {/* <Loader /> */}
       <section className="relative h-screen overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
