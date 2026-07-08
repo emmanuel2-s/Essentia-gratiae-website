@@ -52,11 +52,11 @@ function Experience() {
                   className="rounded-3xl"
                 />
 
-                <h4>Grace</h4>
+                {/* <h4>Grace</h4>
                 <p>
                   Encouraging a softer, kinder relationship with yourself and
                   your journey.
-                </p>
+                </p> */}
               </div>
             </FlyIn>
           </div>

@@ -72,7 +72,7 @@ function About() {
             <div className="story-text">
               <div className="small-heading">Our Story</div>
               <FadeUp>
-                <h2 className="main-title">
+                <h2 className="text-5xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
                   The beginning of
                   <br />
                   Essentia Gratia.
@@ -115,7 +115,9 @@ function About() {
 
         <FadeUp>
           <div className="cta-content">
-            <h2>Return to yourself.</h2>
+            <h2 className="text-5xl md:text-7xl font-bold lead-[1.5] capitalize mb-10">
+              Return to yourself.
+            </h2>
             <p className="pb-10 text-xl italic">Your rituals begin here.</p>
 
             <a href="#" className="btn-custom text-decoration-none">

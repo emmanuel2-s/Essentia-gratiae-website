@@ -1,36 +1,33 @@
 import { useEffect, useRef } from "react";
 import "./TopbarArea.css";
 
-const LuxuryStarfield = () => {
+export default function StarField() {
   const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
+
     if (!container) return;
 
-    let interval;
-
-    // CREATE STAR
     const createStar = (initial = false) => {
       const star = document.createElement("div");
-      star.classList.add("star");
 
-      let rand = Math.random();
-      let duration;
+      const type = Math.random();
 
-      if (rand < 0.4) {
-        star.classList.add("far");
-        duration = 18 + Math.random() * 10;
-      } else if (rand < 0.75) {
-        star.classList.add("mid");
-        duration = 12 + Math.random() * 8;
+      if (type < 0.3) {
+        star.className = "streak";
+      } else if (type < 0.6) {
+        star.className = "star";
+      } else if (type < 0.8) {
+        star.className = "streak-green";
       } else {
-        star.classList.add("near");
-        duration = 8 + Math.random() * 6;
+        star.className = "star-green";
       }
 
       star.style.left = Math.random() * 100 + "vw";
       star.style.top = initial ? Math.random() * 100 + "vh" : "-10vh";
+
+      const duration = 2 + Math.random() * 3;
 
       star.style.animationDuration = `${duration}s`;
 
@@ -41,22 +38,21 @@ const LuxuryStarfield = () => {
       }, duration * 1000);
     };
 
-    // INITIAL LOAD
-    for (let i = 0; i < 140; i++) {
+    // Initial stars
+    for (let i = 0; i < 120; i++) {
       createStar(true);
     }
 
-    // CONTINUOUS FLOW
-    interval = setInterval(() => createStar(false), 120);
+    // Continuous stars
+    const interval = setInterval(() => {
+      createStar(false);
+    }, 50);
 
-    // CLEANUP (IMPORTANT)
     return () => {
       clearInterval(interval);
       container.innerHTML = "";
     };
   }, []);
 
-  return <div ref={containerRef} className="stars-container" />;
-};
-
-export default LuxuryStarfield;
+  return <div ref={containerRef} className="stars" />;
+}

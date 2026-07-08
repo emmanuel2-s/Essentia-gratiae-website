@@ -6,6 +6,15 @@
   pointer-events: none;
 
   /* Luxury Background */
+}
+
+.stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -10;
+
   background:
     radial-gradient(circle at top, rgba(197, 174, 134, 0.12), transparent 40%),
     radial-gradient(
@@ -16,76 +25,79 @@
     linear-gradient(180deg, #201710 0%, #2f2118 35%, #453124 70%, #2d2119 100%);
 }
 
-/* Base particle */
+/* GOLD STAR */
+
 .star {
   position: absolute;
-  top: -10vh;
+  width: 10px;
+  height: 10px;
+  background: #ffe8b0;
   border-radius: 999px;
-  animation-name: luxuryFloat;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-/* Far particles */
-.star.far {
-  width: 1px;
-  height: 1px;
-
-  background: rgba(255, 245, 220, 0.5);
-
-  box-shadow: 0 0 4px rgba(255, 230, 170, 0.25);
-
-  opacity: 0.35;
-}
-
-/* Mid particles */
-.star.mid {
-  width: 2px;
-  height: 2px;
-
-  background: #f3deb4;
-
-  box-shadow: 0 0 8px rgba(255, 215, 140, 0.55);
-
-  opacity: 0.7;
-}
-
-/* Near particles */
-.star.near {
-  width: 4px;
-  height: 4px;
-
-  background: #ffd98d;
 
   box-shadow:
-    0 0 12px #ffd27a,
-    0 0 22px rgba(255, 210, 122, 0.8);
+    0 0 8px #ffd27a,
+    0 0 16px #ffcc66,
+    0 0 24px #ffb84d;
 
-  opacity: 1;
+  animation: fall linear forwards;
 }
 
-@keyframes luxuryFloat {
+/* GOLD STREAK */
+
+.streak {
+  position: absolute;
+  width: 4px;
+  height: 28px;
+
+  background: linear-gradient(to bottom, #ffe8b0, transparent);
+
+  border-radius: 999px;
+
+  animation: fall linear forwards;
+}
+
+/* GREEN STAR */
+
+.star-green {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  background: #8affc1;
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 8px #5cff9d,
+    0 0 16px #33ff88,
+    0 0 24px #00e673;
+
+  animation: fall linear forwards;
+}
+
+/* GREEN STREAK */
+
+.streak-green {
+  position: absolute;
+
+  width: 4px;
+  height: 28px;
+
+  background: linear-gradient(to bottom, #8affc1, transparent);
+
+  border-radius: 999px;
+
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
   from {
-    transform: translateY(-10vh) translateX(0px);
-
-    opacity: 0;
-  }
-
-  8% {
+    transform: translateY(0);
     opacity: 1;
   }
 
-  35% {
-    transform: translateY(35vh) translateX(18px);
-  }
-
-  65% {
-    transform: translateY(70vh) translateX(-18px);
-  }
-
-  100% {
-    transform: translateY(110vh) translateX(12px);
-
+  to {
+    transform: translateY(120vh);
     opacity: 0;
   }
 }

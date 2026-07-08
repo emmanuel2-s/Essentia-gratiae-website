@@ -7,17 +7,17 @@ function FeaturedProducts() {
   const products = [
     {
       name: "Lavender Calm",
-      price: "$35",
+      price: "35",
       image: lavenderCandle,
     },
     {
       name: "Vanilla Bliss",
-      price: "$40",
+      price: "40",
       image: vanillaCandle,
     },
     {
       name: "Ocean Breeze",
-      price: "$38",
+      price: "38",
       image: oceanCandle,
     },
   ];

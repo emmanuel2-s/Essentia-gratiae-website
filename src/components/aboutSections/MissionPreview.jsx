@@ -34,7 +34,7 @@ export default function MissionSection() {
           OUR MISSION
         </p>
 
-        <h2 className="font-serif text-center text-[#342D28] text-6xl mt-5">
+        <h2 className="font-serif text-center text-[#342D28] text-4xl md:text-6xl lead-[1.5] capitalize mb-10 mt-5">
           Helping You Create Beautiful Rituals
         </h2>
 

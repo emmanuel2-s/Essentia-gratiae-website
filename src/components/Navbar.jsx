@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo/aster-logo-removebg-preview.png";
 import useCart from "../components/hooks/useCart";
+import { motion } from "framer-motion";
 
 export default function Navbar({ scrolled }) {
   const [nav, setNav] = useState(false);
@@ -24,7 +25,7 @@ export default function Navbar({ scrolled }) {
       {/* Navbar */}
       <nav
         className={`fixed left-0 w-full z-50 bg-black/30 backdrop-blur-md  transition-all duration-500 ${
-          scrolled ? "top-0" : "top-12"
+          scrolled ? "top-0" : "top:0 lg:top-12"
         }`}
       >
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 lg:px-10 h-24">
@@ -72,16 +73,29 @@ export default function Navbar({ scrolled }) {
             >
               Let's Talk
             </Link>
-
-            <Link
-              to="/cart"
-              className="relative text-2xl text-white hover:scale-110 transition"
+            <motion.span
+              key={count}
+              initial={{
+                scale: 0.5,
+              }}
+              animate={{
+                scale: 1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+              }}
             >
-              👜
-              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#7d8770] text-xs text-white">
-                {count}
-              </span>
-            </Link>
+              <Link
+                to="/cart"
+                className="relative text-2xl text-white hover:scale-110 transition"
+              >
+                👜
+                <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#7d8770] text-xs text-white">
+                  {count}
+                </span>
+              </Link>
+            </motion.span>
           </div>
 
           {/* Mobile Menu Icon */}

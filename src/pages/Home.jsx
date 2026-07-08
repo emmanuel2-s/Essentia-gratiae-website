@@ -32,6 +32,47 @@ export default function Home() {
       toast.success(`has been added to your ritual basket.`);
     }, 5000);
   }, []);
+
+  const rituals = [
+    {
+      image: img1,
+      title: "Morning Grounding Ritual",
+      text: "Begin your day with presence and intention.",
+    },
+    {
+      image: img2,
+      title: "Journaling Prompts",
+      text: "Words that help you release, reflect and realign.",
+    },
+    {
+      image: img3,
+      title: "Evening Candle Meditation",
+      text: "A quiet meditation to help you unwind gently.",
+    },
+  ];
+
+  const featuredRituals = [
+    {
+      id: 1,
+      image: f1,
+      title: "Stillness",
+      text: "For quiet evenings and grounded thoughts.",
+    },
+
+    {
+      id: 2,
+      image: f2,
+      title: "Clarity",
+      text: "For focus, intention and inner alignment.",
+    },
+
+    {
+      id: 3,
+      image: f3,
+      title: "Soul Rest",
+      text: "For deep reflection and emotional reset.",
+    },
+  ];
   // const heroSlides = [
   //   {
   //     id: 1,
@@ -121,7 +162,7 @@ export default function Home() {
               <div className="story-text">
                 <div className="small-heading">Our Story</div>
                 <FadeUp>
-                  <h2 className="main-title text-[#1E3A34]">
+                  <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
                     A return to what
                     <br />
                     truly matters.
@@ -169,42 +210,40 @@ export default function Home() {
         <section className="section-1 center">
           <div className="container-custom">
             <div className="small-heading">Featured Rituals</div>
-
-            <h2 className="main-title text-[#1E3A34]">
+            <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
               Rituals for every part of you.
             </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              {featuredRituals.map((ritual, index) => (
+                <FlyIn
+                  key={ritual.id}
+                  direction={index === 2 ? "left" : "right"}
+                >
+                  <div className="group overflow-hidden rounded-3xl bg-[#FDFBF8] shadow-md transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+                    {/* Image */}
+                    <div className="h-[320px] overflow-hidden">
+                      <img
+                        src={ritual.image}
+                        alt={ritual.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
 
-            <div className="cards">
-              <div className="card bg-[#FDFBF8] rounded-3xl shadow hover:-translate-y-3 hover:shadow-xl duration-500 text-center">
-                <FlyIn direction="right">
-                  <div className="card-img">
-                    <img src={f1} loading="lazy" className="rounded-t-xl" />
-                  </div>
-                  <h3>Stillness</h3>
-                  <p>For quiet evenings and grounded thoughts</p>
-                </FlyIn>
-              </div>
+                    {/* Content */}
+                    <div className="flex min-h-[180px] flex-col items-center justify-center px-8 py-8 text-center">
+                      <h3 className="font-serif text-4xl text-[#1E3A34]">
+                        {ritual.title}
+                      </h3>
 
-              <div className="card bg-[#FDFBF8] rounded-3xl shadow hover:-translate-y-3 hover:shadow-xl duration-500 text-center">
-                <FlyIn direction="right">
-                  <div className="card-img">
-                    <img src={f2} loading="lazy" className="rounded-t-xl" />
+                      <p className="mt-4 leading-8 text-[#6E6258]">
+                        {ritual.text}
+                      </p>
+                    </div>
                   </div>
-                  <h3>Clarity</h3>
-                  <p>For focus, intention and inner alignment</p>
                 </FlyIn>
-              </div>
-
-              <div className="card bg-[#FDFBF8] rounded-3xl  shadow hover:-translate-y-3 hover:shadow-xl duration-500 text-center">
-                <FlyIn direction="left">
-                  <div className="card-img">
-                    <img src={f3} loading="lazy" className="rounded-t-xl" />
-                  </div>
-                  <h3>Soul Rest</h3>
-                  <p>For deep reflection and emotional reset</p>
-                </FlyIn>
-              </div>
-            </div>
+              ))}
+            </div>{" "}
           </div>
         </section>
         {/* FEATURED SECTION END */}
@@ -222,7 +261,7 @@ export default function Home() {
                 <div className="">
                   <div className="small-heading">Create Your Moment</div>
 
-                  <h2 className="main-title text-[#1E3A34]">
+                  <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
                     Make it a ritual.
                   </h2>
 
@@ -252,36 +291,37 @@ export default function Home() {
         <section className="section-3 center">
           <div className="container-custom">
             <div className="small-heading">Rituals For The Soul</div>
-
-            <h2 className="main-title text-[#1E3A34]">
+            <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
               Guidance for your journey within.
             </h2>
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-16">
+              {rituals.map((ritual, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
+                >
+                  <div className="flex flex-col md:flex-row items-center">
+                    <div className="w-full md:w-[42%] h-full md:h-[300px] overflow-hidden">
+                      <img
+                        src={ritual.image}
+                        alt={ritual.title}
+                        className="w-full  md:h-full object-cover"
+                      />
+                    </div>
 
-            <div className="grid md:grid-cols-3 gap-10">
-              <div className="journal-card flex items-center shadow bg-white p-2 rounded-2xl hover:-translate-y-3 hover:ease-in-out duration-500 hover:shadow-xl">
-                <img src={img1} className="rounded-xl" loading="lazy" />
-                <div>
-                  <h4>Morning Grounding Ritual</h4>
-                  <p>Begin your day with presence and intention.</p>
-                </div>
-              </div>
+                    <div className="flex-1 p-6 md:p-8 text-center md:text-left">
+                      <h3 className="font-serif text-3xl md:text-4xl text-[#1E3A34] leading-tight">
+                        {ritual.title}
+                      </h3>
 
-              <div className="journal-card flex items-center shadow bg-white p-2 rounded-2xl hover:-translate-y-3 hover:ease-in-out duration-500 hover:shadow-xl">
-                <img src={img2} className="rounded-xl" loading="lazy" />
-                <div>
-                  <h4>Journaling Prompts</h4>
-                  <p>Words that help you release, reflect and realign.</p>
+                      <p className="mt-5 leading-8 text-[#6E6258]">
+                        {ritual.text}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div className="journal-card flex items-center shadow bg-white p-2 rounded-2xl hover:-translate-y-3 hover:ease-in-out duration-500 hover:shadow-xl">
-                <img src={img3} className="rounded-xl" loading="lazy" />
-                <div>
-                  <h4>Evening Candle Meditation</h4>
-                  <p>A quiet meditation to help you unwind gently.</p>
-                </div>
-              </div>
-            </div>
+              ))}
+            </div>{" "}
           </div>
         </section>
         <FounderStory />

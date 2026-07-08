@@ -32,9 +32,7 @@ export default function FounderStory() {
             </p>
 
             <h2 className="font-serif text-6xl mt-5 text-[#342D28]">
-              Grace begins
-              <br />
-              with stillness.
+              Grace begins with stillness.
             </h2>
 
             <div className="w-24 h-[2px] bg-[#C5AE86] my-10"></div>

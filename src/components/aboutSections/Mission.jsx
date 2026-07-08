@@ -8,7 +8,9 @@ export default function Mission() {
         <div className="container-custom">
           <div className="small-heading center">Our Mission</div>
 
-          <h2 className="main-title center">More than a brand. A sanctuary.</h2>
+          <h2 className="text-5xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34] center">
+            More than a brand. A sanctuary.
+          </h2>
           <div className="story-grid">
             <div className="story-text bg-white p-20 rounded shadow">
               <div className="small-heading">Our Mission</div>

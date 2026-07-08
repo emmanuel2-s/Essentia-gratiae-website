@@ -16,7 +16,9 @@ export default function InstaSection() {
         <div className="container-custom-insta">
           <div className="insta-link">
             <div className="moments">
-              <h5 className="small-heading">MOMENTS OF GRACE</h5>
+              <h5 className="uppercase tracking-[0.4em] text-xl">
+                MOMENTS OF GRACE
+              </h5>
               <h3>
                 Follow along <em>@aster.rituals</em>
               </h3>
@@ -45,7 +47,9 @@ export default function InstaSection() {
 
         <FadeUp>
           <div className="cta-content">
-            <h2>Return to yourself.</h2>
+            <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 ">
+              Return to yourself.
+            </h2>
             <p className="pb-10 text-xl italic">Your rituals begin here.</p>
 
             <a href="#" className="btn-custom text-decoration-none">
