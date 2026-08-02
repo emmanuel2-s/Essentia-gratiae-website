@@ -342,7 +342,7 @@
 .footer {
   background: #1e3a34;
   padding: 70px 0;
-  color: #6f6358;
+  color: gold;
 }
 
 .footer-grid {
@@ -359,7 +359,7 @@
 .footer a {
   display: block;
   text-decoration: none;
-  color: #6f6358;
+  color: #ffffff;
   margin-bottom: 12px;
   font-size: 14px;
 }

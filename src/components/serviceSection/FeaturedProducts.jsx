@@ -46,7 +46,9 @@ function FeaturedProducts() {
                 <div className="p-4">
                   <h3 className="text-2xl font-semibold">{item?.name}</h3>
 
-                  <p className="mt-3 text-amber-600 font-bold">{item?.price}</p>
+                  <p className="mt-3 text-amber-600 font-bold">
+                    £{item?.price}
+                  </p>
 
                   <button
                     onClick={() => addToCart(item)}

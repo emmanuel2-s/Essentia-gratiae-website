@@ -59,7 +59,7 @@ export default function FAQ() {
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full flex items-center justify-between px-4 py-4 text-left"
+                    className="w-full flex items-center justify-between px-4 py-4 text-left cursor-pointer"
                   >
                     <h3 className="text-2xl font-bold text-[#2E2A27]">
                       {faq.question}

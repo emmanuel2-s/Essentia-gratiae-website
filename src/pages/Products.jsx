@@ -7,7 +7,7 @@ function Products() {
   return (
     <>
       {/* <Loader /> */}
-      <section className="bg-[#F8F5EE] min-h-screen">
+      <section className="bg-[#F8F5EE] min-h-screen pt-40">
         {/* HERO */}
         <div className="grid lg:grid-cols-2 min-h-screen">
           {/* Product Image */}

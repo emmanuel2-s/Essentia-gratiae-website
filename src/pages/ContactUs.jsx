@@ -31,7 +31,7 @@ export default function ContactUs() {
   return (
     <>
       {/* <Loader /> */}
-      <section className="relative h-[80vh] overflow-hidden">
+      <section className="relative h-[80vh] overflow-hidden pt-40">
         <img
           src={heroImage}
           alt="Contact Essentia Gratiae"

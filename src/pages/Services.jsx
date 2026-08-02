@@ -15,7 +15,7 @@ function Services() {
     <>
       {/* <Loader /> */}
       {/* HERO SECTION */}
-      <section className="relative h-[80vh] overflow-hidden bg-cover bg-center">
+      <section className="relative h-[90vh] overflow-hidden bg-cover bg-center md:pt-40">
         <img
           src={heroImage}
           loading="lazy"
@@ -128,7 +128,7 @@ function Services() {
       <Testimoinal />
       <FAQ />
       <NewsletterSection />
-      <div id="whatsapp-container">
+      <div id="whatsapp-container" className="">
         <a
           href="https://wa.me/+447939437939"
           target="_blank"

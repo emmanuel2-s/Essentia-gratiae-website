@@ -29,7 +29,7 @@ export default function TopbarArea({ scrolled }) {
             className="flex items-center gap-2 transition duration-300 hover:text-[#c5ae86]"
           >
             <Phone size={14} />
-            <span>+44 7947 995687</span>
+            <span>+44 7939 437939</span>
           </a>
 
           <div className="flex items-center gap-2 text-[#f7f2eb]/90">
@@ -41,7 +41,7 @@ export default function TopbarArea({ scrolled }) {
         {/* Right */}
         <div className="flex items-center gap-5">
           <a
-            href="/contact"
+            href="/contactus"
             className="rounded-full border border-[#c5ae86] px-5 py-1.5 text-[11px] uppercase tracking-[0.25em] transition-all duration-300 hover:bg-[#c5ae86] hover:text-[#342d28]"
           >
             Book Now
@@ -50,7 +50,7 @@ export default function TopbarArea({ scrolled }) {
           <div className="h-4 w-px bg-white/20" />
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/bolfis.london?igsh=N2poMmx2czg1cDc2"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-[#c5ae86]"
@@ -59,7 +59,7 @@ export default function TopbarArea({ scrolled }) {
             </a>
 
             <a
-              href="https://youtube.com/shorts/wU5ywl91iYk?si=IY2NfmGsVhzHeBZo"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-[#c5ae86]"
@@ -68,7 +68,7 @@ export default function TopbarArea({ scrolled }) {
             </a>
 
             <a
-              href="https://x.com/BolfisD32384"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-[#c5ae86]"
@@ -77,7 +77,7 @@ export default function TopbarArea({ scrolled }) {
             </a>
 
             <a
-              href="https://www.facebook.com/share/xXKFxKGUJmc8pKwy/?mibextid=LQQJ4d"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-[#c5ae86]"

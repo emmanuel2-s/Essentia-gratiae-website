@@ -1,8 +1,4 @@
 import { useState, useEffect } from "react";
-
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import TopbarArea from "./components/TopbarArea";
 import RouterPage from "./utils/RouterPage";
 import { ToastContainer } from "react-toastify";
 import Loader from "./components/Loader";
@@ -38,12 +34,9 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <TopbarArea scrolled={scrolled} />
-      <Navbar scrolled={scrolled} />
-      <main className="pt]">
-        <RouterPage />
+      <main>
+        <RouterPage scrolled={scrolled} />
       </main>
-      <Footer />
     </>
   );
 }

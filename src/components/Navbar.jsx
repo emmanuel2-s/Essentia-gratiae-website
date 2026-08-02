@@ -112,39 +112,59 @@ export default function Navbar({ scrolled }) {
       <div
         className={`fixed top-0 ${
           nav ? "left-0" : "-left-full"
-        } w-72 h-screen bg-black transition-all duration-500 ease-in-out z-40 md:hidden`}
+        } w-72 h-screen bg-black/30 backdrop-blur-md  transition-all duration-500 ease-in-out z-40 md:hidden`}
       >
         {/* Logo */}
-        <div className="flex justify-center py-8 border-b border-gray-700">
+        <div className="flex justify-center py-8 border-b border-gray-200">
           <img src={logo} alt="Logo" className="h-16 w-auto" />
         </div>
 
         {/* Links */}
         <div className="flex flex-col p-8 space-y-6 text-white uppercase tracking-widest">
-          <Link to="/" onClick={hideMobileNav}>
+          <Link
+            to="/"
+            onClick={hideMobileNav}
+            className="border-b border-gray-200 pb-3"
+          >
             Home
           </Link>
 
-          <Link to="/about" onClick={hideMobileNav}>
+          <Link
+            to="/about"
+            onClick={hideMobileNav}
+            className="border-b border-gray-200 pb-3"
+          >
             About
           </Link>
 
-          <Link to="/service" onClick={hideMobileNav}>
+          <Link
+            to="/service"
+            onClick={hideMobileNav}
+            className="border-b border-gray-200 pb-3"
+          >
             Services
           </Link>
 
-          <Link to="/rituals" onClick={hideMobileNav}>
+          <Link
+            to="/rituals"
+            onClick={hideMobileNav}
+            className="border-b border-gray-200 pb-3"
+          >
             Rituals
           </Link>
 
-          <Link to="/contactus" onClick={hideMobileNav}>
+          <Link
+            to="/contactus"
+            onClick={hideMobileNav}
+            className="border-b border-gray-200 pb-3"
+          >
             Let's Talk
           </Link>
 
           <Link
             to="/cart"
             onClick={hideMobileNav}
-            className=" relative text-2xl"
+            className=" relative text-2xl border-b border-gray-200 pb-3"
           >
             👜 Cart
             <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#7d8770] text-xs text-white">

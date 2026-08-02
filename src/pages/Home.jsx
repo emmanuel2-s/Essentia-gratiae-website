@@ -11,27 +11,18 @@ import FadeUp from "../utils/fadeUp";
 import FlyIn from "../utils/flyIn";
 import InstaSection from "../components/InstaSection";
 import MissionSection from "../components/aboutSections/MissionPreview";
-// import { motion } from "framer-motion";
-// import Loader from "../components/Loader";
 import ScrollButton from "../utils/ScrollButton";
 import FounderStory from "../components/FounderStory";
-import { toast } from "react-toastify";
-import { useEffect } from "react";
-// import imgd from "/aster-logo-removebg-preview.png";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import { Autoplay, EffectFade } from "swiper/modules";
-// import "swiper/css/effect-fade";
-// import LuxuryBackground from "../components/LuxuryBackground";
-// import { SwiperSlide } from "swiper/react";
-// import "../App.css";
+import SupabaseTest from "../components/supaBaseTest";
+// import { toast } from "react-toastify";
+// import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    setTimeout(() => {
-      toast.success(`has been added to your ritual basket.`);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     toast.success(`has been added to your ritual basket.`);
+  //   }, 5000);
+  // }, []);
 
   const rituals = [
     {
@@ -111,8 +102,7 @@ export default function Home() {
       {/* <Loader /> */}
       <div>
         <Hero />
-
-        {/* <LuxuryBackground /> */}
+        <SupabaseTest />
 
         {/* <section>
         <div className=" flex justify-center pt-12">
@@ -160,7 +150,7 @@ export default function Home() {
           <div className="container-custom">
             <div className="story-grid">
               <div className="story-text">
-                <div className="small-heading">Our Story</div>
+                <div className="small-heading tracking-[0.4em]">Our Story</div>
                 <FadeUp>
                   <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
                     A return to what
@@ -209,7 +199,9 @@ export default function Home() {
 
         <section className="section-1 center">
           <div className="container-custom">
-            <div className="small-heading">Featured Rituals</div>
+            <div className="small-heading tracking-[0.4em]">
+              Featured Rituals
+            </div>
             <h2 className="text-4xl md:text-7xl lead-[1.5] capitalize mb-10 text-[#1E3A34]">
               Rituals for every part of you.
             </h2>

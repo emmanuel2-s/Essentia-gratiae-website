@@ -98,7 +98,7 @@ export default function Hero() {
                       {slide.subtitle}
                     </p>
 
-                    <button className="hidden md:flex mt-12 rounded-full bg-[#C5AE86] px-10 py-5 uppercase tracking-[0.25em] text-[#342d28] transition hover:bg-white">
+                    <button className="hidden md:flex mt-12 rounded bg-[#C5AE86] px-10 py-5 uppercase tracking-[0.25em] text-[#342d28] transition hover:bg-white">
                       {slide.button}
                     </button>
                   </motion.div>
