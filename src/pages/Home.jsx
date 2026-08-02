@@ -13,7 +13,6 @@ import InstaSection from "../components/InstaSection";
 import MissionSection from "../components/aboutSections/MissionPreview";
 import ScrollButton from "../utils/ScrollButton";
 import FounderStory from "../components/FounderStory";
-import SupabaseTest from "../components/supaBaseTest";
 // import { toast } from "react-toastify";
 // import { useEffect } from "react";
 
@@ -102,7 +101,6 @@ export default function Home() {
       {/* <Loader /> */}
       <div>
         <Hero />
-        <SupabaseTest />
 
         {/* <section>
         <div className=" flex justify-center pt-12">
