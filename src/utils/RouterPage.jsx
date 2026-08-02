@@ -21,7 +21,7 @@ const PublicLayout = ({ scrolled }) => {
     <>
       <TopbarArea scrolled={scrolled} />
       <Navbar scrolled={scrolled} />
-      <main className="pt-[140]">
+      <main className="">
         <Outlet /> {/* This dynamically renders the active child route */}
       </main>
       <Footer />
